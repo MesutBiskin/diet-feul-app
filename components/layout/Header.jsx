@@ -21,7 +21,7 @@ function Header() {
         <nav className={`sm:static absolute top-0 left-0 grid 
         place-content-center sm:w-auto sm:h-auto
          sm:text-white text-black sm:bg-transparent bg-white ${
-          isMenuModal != true && "hidden"
+          isMenuModal != true && "hidden md:block"
         }`}
        >
           <ul className="flex gap-x-2 sm:flex-row flex-col items-center">
@@ -54,7 +54,7 @@ function Header() {
             <button className="btn-primary">Order Online</button>
             </a>
             <button className="sm:hidden inline-block" 
-            onClick={()=> setIsMenuModal(true)}>
+            onClick={()=> setIsMenuModal(!isMenuModal)}>
         <GiHotMeal className="text-xl hover:text-primary"/>
           </button> 
         </div>
