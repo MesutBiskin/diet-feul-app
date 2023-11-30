@@ -1,9 +1,15 @@
+import Carousel from '../../components/Carousel';
+function Home() {
 
-function Home  () {
+
+  
   return (
-    <>
+    <div>
+      
+
     
-    </>
+    <Carousel/>
+    </div>
   )
 }
 

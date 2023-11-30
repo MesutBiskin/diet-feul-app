@@ -1,11 +1,12 @@
 
 
-function Footer () {
+function Footer() {
   return (
     <>
-    <div>
-      <h3>Copyright©️ by Mesut Biskin</h3>
+      <div>
+        
       </div>
+      <h4>Copyright© Mesut Biskin 2023</h4>
     </>
   )
 }
