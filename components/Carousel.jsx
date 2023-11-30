@@ -25,6 +25,7 @@ const Carousel = () => {
     alt="" 
     layout="fill"
     objectFit='cover'
+    className='salmon'
     /> 
       <div>
        {/* <Slider {...settings}></Slider>*/}

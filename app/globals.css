@@ -18,6 +18,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover; */
 }
+body {
+  /* background-image: url('../public/Images/bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
 
 .btn-primary {
   @apply text-white px-[30px] py-[8px] rounded-3xl bg-primary cursor-pointer hover:opacity-70 transition-all

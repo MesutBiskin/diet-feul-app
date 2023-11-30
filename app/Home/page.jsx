@@ -8,7 +8,7 @@ function Home() {
       
 
     
-    <Carousel/>
+    {/* <Carousel/> */}
     </div>
   )
 }
