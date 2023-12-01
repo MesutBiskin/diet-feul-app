@@ -7,7 +7,7 @@ const Login = () => {
   return (
    
     <div className='container mx-auto'>
-      <div className='text-black'>
+      <div className='text-black flex flex-col'>
         <Title addClass="text-[40px]">Login</Title>
       </div>
     <Input/>

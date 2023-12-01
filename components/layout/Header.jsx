@@ -37,10 +37,11 @@ function Header() {
               <Link href="/menu">Menu</Link>
             </li>
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-              <Link href="/About">About</Link>
+              {/* <Link href="/about">About</Link> */}
+              <a href="/about">About</a>
             </li>
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-              <Link href="Calorie">Calori Calculator</Link>
+              <Link href="calorie">Calori Calculator</Link>
             </li>
           </ul>
         </nav>
