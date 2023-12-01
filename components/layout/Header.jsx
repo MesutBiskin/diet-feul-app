@@ -1,21 +1,21 @@
 "use client"
-import { useState } from "react"
-import Logo from "components/ui/Logo"
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { FaUserAlt, FaShoppingCart, FaSearch } from "react-icons/fa"
 import Search from "../ui/Search"
 import { GiHotMeal } from "react-icons/gi";
+import Logo from "components/ui/Logo"
+import Link from "next/link"
 
-//import { useRouter } from "react-router";
 
 
 function Header() {
   const [isSearchModal, setIsSearchModal] = useState(false) // setISSearchModal true ise onu degistirmeye yariyor.
   // yazdiracagimiz yerlerde isSearchModal i kullaniyoruz degisecek yerde setIsSearchModal
   const [isMenuModal, setIsMenuModal] = useState(false)
- 
-  //const router = useRouter();
-  //console.log(router);
 
+  const router = useRouter();
+  
 
   return (
     <div className="h-[5.5rem] bg-secondary  ">
@@ -31,29 +31,29 @@ function Header() {
         >
           <ul className="flex gap-x-2 sm:flex-row flex-col items-center">
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-              <a href="">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-              <a href="">Menu</a>
+              <Link href="/menu">Menu</Link>
             </li>
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-              <a href="">About</a>
+              <Link href="/About">About</Link>
             </li>
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-              <a href="">Calori Calculator</a>
+              <Link href="Calorie">Calori Calculator</Link>
             </li>
           </ul>
         </nav>
         <div className="flex gap-x-4 items-center">
-          <a href="#" >
-            <FaUserAlt className="hover:text-primary" />
-          </a>
+          <Link href="/login" >
+            <FaUserAlt className="hover:text-primary transition-all cursor-pointer" />
+          </Link>
 
           <a href="#" >
-            <FaShoppingCart className="hover:text-primary" />
+            <FaShoppingCart className="hover:text-primary transition-all cursor-pointer" />
           </a>
           <button onClick={() => setIsSearchModal(true)}>
-            <FaSearch className="hover:text-primary" />
+            <FaSearch className="hover:text-primary transition-all cursor-pointer" />
           </button>
           <a href="#" className="md:inline-block hidden sm">
             <button className="btn-primary">Order Online</button>

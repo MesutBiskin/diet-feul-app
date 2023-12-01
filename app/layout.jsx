@@ -1,3 +1,4 @@
+import React from 'react';
 import { Inter } from 'next/font/google'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -18,13 +19,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      {/* <Header /> */}
-     
-      
+
+    // Header and Footer will keep on all pages.We do not read repeat code.
+    <React.Fragment>
+      <Header />
       <body className={inter.className}>{children}</body>
-    
-      {/* <Footer /> */}
-    </html>
+      <Footer />
+    </React.Fragment>
+
+
   )
 }
