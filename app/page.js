@@ -5,6 +5,7 @@ import Home from "./Home/page";
 import Carousel from "@/components/Carousel";
 import MenuWrapper from "@/components/product/MenuWrapper";
 import About from "./About/page";
+import Reservation from "@/components/Reservation";
 
 
 
@@ -18,6 +19,7 @@ export default function Index() {
      <Carousel/>
      <MenuWrapper/>
      <About />
+     <Reservation/>
      {/*<Footer/>*/}
       
     </div>

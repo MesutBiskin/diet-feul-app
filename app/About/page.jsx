@@ -1,12 +1,11 @@
 import React from "react"
-// import Title from 'components/ui/title'
-// import Image from "next/image"
+import Title from 'components/ui/title'
+import Image from "next/image"
 
 const About = () => {
   return (
     <div>
-      {/* <h2>test about</h2> */}
-      {/* <div className='bg-secondary py-14'>
+      <div className='bg-secondary py-14'>
         <div className='container mx-auto flex items-center text-white gap-20 flex-wrap
         justify-center'>
           <div className='relative w-[450px] h-[450px]'>
@@ -22,7 +21,7 @@ const About = () => {
             </button>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
